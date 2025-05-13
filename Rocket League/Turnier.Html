@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#"><img src="img/Rocket-League-Logo.svg" width="200px" > </a>
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/Rocket-League-Logo.svg" width="150px" ></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link mx-lg-2 " aria-current="page" href="Rocket.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="Turnier.Html">Turnier </a>
+                </li>
+             </li>
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Home </a>
+            </li>
+             </li>
+            <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="#">Home</a>
+            </li>
+             </ul>
+            </div>
+        </div>
+        
+        <a href="#" class="button">Jetzt Spielen!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label=" Toggle navigation">
+            <span class="navbar-toggler-icon  " id="menu"></span>
+        </button>
+        </div>
+    </nav>
+    
+   
+    
+      
+      <section id="info" class="container-fluid">
+        <h1 class="text-gradient">Rocket League Turnier</h1>
+        <p>Willkommen zum Rocket League Turnier! Zeige dein Können und kämpfe dich durch den Turnierbaum, um der Champion zu werden.</p>
+        <p><strong>Datum:</strong> 15. Mai 2025<br><strong>Ort:</strong> Online<br><strong>Preis:</strong> 500€ für den Gewinner</p>
+      </section>
+    
+      
+      <section id="baumdiagramm" class="container-fluid">
+        <h2 class="text-gradient">Turnierbaum</h2>
+        
+        <div class="turnierbeschreibung">
+          <ul class="list-unstyled">
+              <li>
+                  <p class="fw-bold ">3 gegen 3</p>
+              </li>
+              <li>
+                  <strong>Erste Runde:</strong> Alle Teams spielen gegeneinander. Die Gewinner kommen in die nächste Runde, die Verlierer scheiden aus.
+              </li>
+              <li>
+                  <strong>Viertelfinale (8 Teams):</strong> Die 8 Sieger der ersten Runde treten gegeneinander an.
+              </li>
+              <li>
+                  <strong>Halbfinale (4 Teams):</strong> Die 4 Sieger der Viertelfinals kämpfen um den Platz im Finale.
+              </li>
+              <li>
+                  <strong>Finale (2 Teams):</strong> Die beiden letzten Teams spielen um den Turniersieg.
+              </li>
+          </ul>
+        </div>
+    
+        <div class="baumdiagramm">
+            <img src="baumdiagramm.png" alt="Turnierbaum" class="baumdiagramm-img">
+        </div>
+    </section>
+    
+    
+    
+      <section id="anmeldung" class="container-fluid">
+        <h2 class="text-gradient">Anmeldung</h2>
+        <form action="submit.php" method="POST" class="anmeldung-form">
+          <label for="teamname">Teamname:</label>
+          <input type="text" id="teamname" name="teamname" required>
+          
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="spieler">Spieler (max. 3):</label>
+          <textarea id="spieler" name="spieler" rows="3" placeholder="Spieler 1, Spieler 2, Spieler 3" required></textarea>
+          
+          <button type="submit" class="button">Anmelden</button>
+
+        </form>
+      </section>
+
+      <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center mb-3">
+              <img src="img/Rocket-League-Logo.svg" alt="Rocket League Logo" width="150">
+              <p class="mt-2">Das ultimative Auto-Fußball-Erlebnis!</p>
+            </div>
+            <div class="col-md-4 text-center mb-3">
+              <h5 class="fw-bold">Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="Rocket.html" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="Turnier.Html" class="text-white text-decoration-none">Turnier</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 text-center mb-3">
+              <h5 class="fw-bold">Verfügbar auf</h5>
+              <div class="d-flex justify-content-center">
+                <img src="img/playstation.png" alt="PlayStation Icon" width="50" class="me-3">
+                <img src="img/xbox.png" alt="Xbox Icon" width="50" class="me-3">
+                <img src="img/pc.png" alt="PC Icon" width="50" class="me-3">
+                <img src="img/switch-logo.png" alt="Switch Icon" width="50">
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <p class="mb-0">&copy; Obadah</p>
+          </div>
+        </div>
+      </footer>
+    
+    
+
+
+    
+</body>
+</html>
